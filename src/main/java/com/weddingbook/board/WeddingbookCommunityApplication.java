@@ -63,7 +63,7 @@ public class WeddingbookCommunityApplication implements CommandLineRunner{
 				.build());
 
 		IntStream.rangeClosed(1, 1024).forEach(i -> {
-			Board post = new Board("테스트입니다." + i, "test", memberRepository.findByUid(uid).orElseThrow(UserNotFoundException::new));
+			Board post = new Board("안녕하세요. 반갑습니다." + i, "test", memberRepository.findByUid(uid).orElseThrow(UserNotFoundException::new));
 			boardRepository.save(post);
 		});
 	}
