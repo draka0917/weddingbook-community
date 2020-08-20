@@ -1,0 +1,22 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: warn
+    com.weddingbook.board: debug
+spring:
+  datasource:
+    #url: jdbc:h2:tcp://localhost/~/weddingbook
+    url: jdbc:h2:mem:weddingbook
+    username: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate.hbm2ddl.auto: create
+    showSql: true
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
+  jwt:
+    secret: weddingbook!@
+

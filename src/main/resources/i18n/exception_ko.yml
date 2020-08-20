@@ -1,0 +1,27 @@
+userNotFound:
+  code: "-1000"
+  msg: "존재하지 않는 회원입니다."
+signinFailed:
+  code: "-1001"
+  msg: "로그인 정보가 정확하지 않습니다."
+entryPointException:
+  code: "-1002"
+  msg: "해당 리소스에 접근 권한이 없습니다."
+accessDenied:
+  code: "-1003"
+  msg: "보유한 권한으로 접근할 수 없는 리소스 입니다."
+resourceNotExist:
+  code: "-1004"
+  msg: "요청한 자원이 존재하지 않습니다."
+notOwner:
+  code: "-1005"
+  msg: "해당 자원의 소유자가 아닙니다."
+emailFormatFailed:
+  code: "-2001"
+  msg: "이메일 형식이 정확하지 않습니다."
+passwordFormatFailed:
+  code: "-2002"
+  msg: "비밀번호 형식이 정확하지 않습니다."
+unKnown:
+  code: "-9999"
+  msg: "알 수 없는 오류가 발생하였습니다."
